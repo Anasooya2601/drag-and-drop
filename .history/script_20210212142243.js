@@ -10,7 +10,7 @@ const completeList = document.getElementById('complete-list');
 const onHoldList = document.getElementById('on-hold-list');
 
 // Items
-let updatedOnLoad=false;
+let upddatedOnLoad=false;
 
 
 // Initialize Arrays
@@ -64,35 +64,34 @@ function createItemEl(columnEl, column, item, index) {
 // Update Columns in DOM - Reset HTML, Filter Array, Update localStorage
 function updateDOM() {
   // Check localStorage once
-  if (!updatedOnLoad) {
-    getSavedColumns();
-  }
+if(!updatedOnLoad){
+  getSavedColumns();
+}
   // Backlog Column
-  backlogListEl.textContent = '';
-  backlogListArray.forEach((backlogItem, index) => {
-    createItemEl(backlogListEl, 0, backlogItem, index);
-  });
-  backlogListArray = filterArray(backlogListArray);
+backlogList.textContent='';
+backlogListArray.forEach((backlogItem,index)=>{
+  createItemEl(backlogList,0,backlogItem,index);
+});
   // Progress Column
-  progressListEl.textContent = '';
-  progressListArray.forEach((progressItem, index) => {
-    createItemEl(progressListEl, 1, progressItem, index);
-  });
-  progressListArray = filterArray(progressListArray);
+progressList.textContent='';
+progressListArray.forEach((progressItem,index)=>{
+  createItemEl(progressList,0,progressItem,index);
+});
+
   // Complete Column
-  completeListEl.textContent = '';
-  completeListArray.forEach((completeItem, index) => {
-    createItemEl(completeListEl, 2, completeItem, index);
-  });
-  completeListArray = filterArray(completeListArray);
+  completeList.textContent='';
+completeListArray.forEach((completeItem,index)=>{
+  createItemEl(completeList,0,completeItem,index);
+});
+
   // On Hold Column
-  onHoldListEl.textContent = '';
-  onHoldListArray.forEach((onHoldItem, index) => {
-    createItemEl(onHoldListEl, 3, onHoldItem, index);
-  });
-  onHoldListArray = filterArray(onHoldListArray);
-  // Don't run more than once, Update Local Storage
-  updatedOnLoad = true;
-  updateSavedColumns();
+  onholdList.textContent='';
+onholdListArray.forEach((onHoldItem,index)=>{
+  createItemEl(onHoldList,0,onHoldItem,index);
+});
+
+  // Run getSavedColumns only once, Update Local Storage
+
+
 }
 updateDOM();
