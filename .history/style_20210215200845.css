@@ -27,7 +27,7 @@ nav{
   position:fixed;
   display:flex;
   background:#1b6161;
-  height:7.5%;
+  height:5.5%;
   width: 100%;
   line-height:60px;
   overflow: hidden;
@@ -39,31 +39,8 @@ nav ul{
 }
 nav ul li{
   cursor: pointer;
-  height: 100%;
-  padding: 0 10px;
-  transition: .4s;
 }
-nav ul li:hover{background:#2eacd3;}
-nav ul li a{color: #f2f2f2;}
-nav ul li a span{
-  position:obsolute;
-  letter-spacing:.5px;
-  transform: translateX(-70px);
-  opacity: 0;
-  pointer-events: none;
-  transition: .4s all;
-}
-nav ul li a i{
-  font-size: 22px;
-  margin: 0 38px;
-  transition: .4s all;
-}
-nav ul li:hover a span{
-  transform: translateX(-55px);
-  opacity: 1;
-  pointer-events: visible;
-}
-nav ul li:hover a i{transform: translateX(-25px);}
+
 h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px black;
@@ -75,7 +52,7 @@ h1 {
 }
 .main-title1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 ul {

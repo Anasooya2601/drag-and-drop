@@ -27,7 +27,7 @@ nav{
   position:fixed;
   display:flex;
   background:#1b6161;
-  height:7.5%;
+  height:5.5%;
   width: 100%;
   line-height:60px;
   overflow: hidden;
@@ -63,7 +63,6 @@ nav ul li:hover a span{
   opacity: 1;
   pointer-events: visible;
 }
-nav ul li:hover a i{transform: translateX(-25px);}
 h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px black;
