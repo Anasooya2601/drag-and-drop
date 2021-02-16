@@ -22,7 +22,6 @@ body {
   font-family: Quicksand, sans-serif;
   overflow-y: hidden;
 }
-/* navigation */
 nav{
   top: 0px;
   position:fixed;
@@ -33,9 +32,6 @@ nav{
   line-height:60px;
   overflow: hidden;
   box-shadow:0 0 40px rgba(0, 0, 0, 0.2);
-}
-a{
-text-decoration: none;
 }
 nav ul{
   display: flex;
@@ -64,7 +60,6 @@ nav ul li a i{
 }
 nav ul li:hover a span{
   transform: translateX(-55px);
-
   opacity: 1;
   pointer-events: visible;
 }
@@ -303,15 +298,14 @@ flex: 1;
   text-align: center;
 }
 button {
-border-radius: 10px;
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
 
-}
-/* login */
-.topnav a, .topnav input[type=text], .topnav .login-container button {
-  float: none;
-  display: block;
-  text-align: left;
-  width: 100%;
-  margin: 0;
-  padding: 14px;
 }

@@ -307,11 +307,3 @@ border-radius: 10px;
 
 }
 /* login */
-.topnav a, .topnav input[type=text], .topnav .login-container button {
-  float: none;
-  display: block;
-  text-align: left;
-  width: 100%;
-  margin: 0;
-  padding: 14px;
-}
